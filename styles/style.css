@@ -1,2 +1,5 @@
 body{font-size: xx-large;
-    font-family: 'Courier New', Courier, monospace;}
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,146,0,1) 0%, rgba(0,212,255,1) 100%);}
+    
