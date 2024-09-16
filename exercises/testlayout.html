@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body {
+        width: 1440px;
+        height: 1024px;
+        background-color: #ccdcdd
+        
+    }
+        #main {
+            width: 1440px;
+            height: 1024px;
+            padding:50px;
+        }
+        .header {
+            font-size: 120px;
+            text-align:center;
+            -webkit-text-fill-color: #FCA26E;
+            width: 100%;
+            height: 260px;
+            margin:0;
+            grid-column-end: 2;
+            background-color: #14281f 
+            
+        
+   
+        }
+        .space1 {
+            width: 100%;
+            height: 5%;
+            background-color: #ccdcdd;
+        }
+        .row1 {
+            display:flex;
+            display:grid;
+            height: 10%;
+            
+        }
+        
+        .col1 {
+            display:flexbox;
+            float:left;
+            width: 380px;
+            height: 73px;
+            font-size: 60px;
+            text-align: center;
+            
+        }
+        .col2 {
+            display:flexbox;
+            width: 380px;
+            height: 73px;
+        }
+        .hersheyparkcopy {
+            width: 380px;
+            height: 73px;
+            font-size: x-large;
+            grid-row-start:1;
+            grid-row-end: 1;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+           align-content:space-evenly;
+            width: 100%;
+            height: 100%;
+            background-color: #53ab83;
+            column-count: 2;
+            column-gap: 10%;
+            row-gap: 5%;
+        }
+        .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="header">help</div>
+    <div class="space1"></div>
+    
+    <div class="grid-container">
+        <div class="row">
+            <div class="column"> </div>
+            <div id="col1"> 1.Hershey Park</div>
+            <div id="col1"><img src="https://placehold.co/810x575/png"></div> 
+            <div class="column">A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.
+
+                Learn more: https://www.hersheypark.com </div>
+    <div class="row"></div>  
+    
+         <div id="hersheyparkcopy"></div>
+        </div>
+        
+         
+        <div id="row1"></div>
+        <div class="row"></div>
+    
+   
+
+  
+
+ 
+  
+</body>
+</html>
