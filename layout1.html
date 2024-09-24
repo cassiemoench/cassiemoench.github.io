@@ -1,141 +1,295 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Come to Pennsylvania</title>
     <style>
-    
-    body{
+      body {
         margin: 0;
-        background-color: #ccdcdd;   
+        background-color: #ccdcdd;
         font-family: "Jaldi", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #14281f;
-  
-    }
-    
-    .kaushan-script-regular {
-  font-family: "Kaushan Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+        font-weight: 400;
+        font-style: normal;
+        color: #14281f;
+      }
 
-    a,h2,h3,h4,h5,h6, strong, b{
+      .kaushan-script-regular {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      a,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      strong,
+      b {
         font-family: "Jaldi", sans-serif;
         font-weight: 700;
       }
 
-    img{
+      img {
         width: 100%;
         height: auto;
-    }
-    
-    header {
+      }
+
+      header {
         text-align: center;
-        color: #F5751C;
-  padding-bottom: 20px;
+        color: #f5751c;
+        padding-bottom: 20px;
         background-color: #14281f;
         font-family: "Kaushan Script", cursive;
-    }
-    h1{
+      }
+      h1 {
         font-size: 100px;
-        margin:0;
+        margin: 0;
         font-weight: normal;
-    }
-    h2{
-      text-align:center;
-      
-    }
+      }
+      h2 {
+        text-align: center;
+      }
 
-    h3 {
-      font-size: 20px;
-      font-weight: 550;
-    }
-    main {
+      h3 {
+        font-size: 20px;
+        font-weight: 550;
+      }
+      main {
         max-width: 1000px;
         padding: 20px;
         margin: 0 auto;
         background-color: #ccdcdd;
-       
-    }
-    .row{
+      }
+      .row {
         display: flex;
-       /*gap: 30px; - option for spacing between flex box children */
-    }
-    .description{
+        height: 283px;
+        
+        /*
+        gap: 30px; - option for spacing between flex box children 
+        */
+        column-gap: 20px;
+      }
+      .description {
         padding: 0 30px;
-    }
-        .imageholder{
-      width: 40%;
-    }
-    .description{
-      width: calc(60% - 60px);
+      }
+      .imageholder {
+        width: 40%;
+      }
+      .description {
+        width: calc(60% - 60px);
         padding: 0 30px;
-    }
-    a {
-      background-color: #64817D;
-      padding: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      transition: all 0.5s ease-in-out;
-    }
+        position: relative;
+      }
+      a {
+        transition: all 0.5s ease-in-out;
+      }
+      a:link,
+      a:visited {
+        color: #64817d;
+      }
 
-    a:hover {
-      
-      background-color: #1F4034;
-    }
-
-    h7 {
-      font-family: "Jaldi", sans-serif;
+      a.button {
+        color: #fff;
+        background-color: #64817d;
+        padding: 10px 20px;
         font-weight: 700;
-        color:#ffffff;
         font-size: 20px;
         text-align: center;
-    }
-    
-      </style>
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+      }
+      a.button:hover {
+        background-color: #1f4034;
+      }
+    </style>
   </head>
   <body>
     <main>
-    <header>
+      <header>
         <h1>Come to Pennsylvania</h1>
-        <h3>Pennsylvania is a fantastic destination, boasting a deep historical significance, breathtaking parks, and diverse outdoor experiences, making it a perfect blend of culture and natural beauty for visitors to explore and enjoy.</h3>
-    </header>
-    <h2>Here's our top 10 places to visit in Pennsylvania!</h2>
-    
+        <h3>
+          Pennsylvania is a fantastic destination, boasting a deep historical
+          significance, breathtaking parks, and diverse outdoor experiences,
+          making it a perfect blend of culture and natural beauty for visitors
+          to explore and enjoy.
+        </h3>
+      </header>
+      <h2>Here's our top 10 places to visit in Pennsylvania!</h2>
 
-
-    <div class="row">
-        <div class="imageholder"><img src="https://placehold.co/810x575" alt="This is a picture" /></div>
-      <div class="description">
-        <h3>1. Hershey Park</h3>  
-        <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p></div>
+      <div class="row">
+        <div class="imageholder">
+          <img src="https://placehold.co/810x575" alt="This is a picture" />
+        </div>
+        <div class="description">
+          <h3>1. Hershey Park</h3>
+          <p>
+            A renowned amusement park featuring exciting rides,
+            live entertainment, and an opportunity to learn about
+            chocolate-making at Hershey's Chocolate World.
+          </p>
+          <a href="https://www.hersheypark.com"
+            ><a href="#" class="button">Visit Site</a></a
+          >
+        </div>
       </div>
 
-      <a href="https://www.hersheypark.com"><h7>Visit Site</h7></a>
+      <div class="row">
+        <div class="imageholder">
+          <img src="https://placehold.co/810x575" alt="This is a picture" />
+        </div>
+        <div class="description">
+          <h3>1. Hershey Park</h3>
+          <p>
+            A renowned amusement park featuring exciting rides,
+            live entertainment, and an opportunity to learn about
+            chocolate-making at Hershey's Chocolate World.
+          </p>
+          <a href="https://www.hersheypark.com"
+            ><a href="#" class="button">Visit Site</a></a
+          >
+        </div>
+      </div>
 
-    <div class="row">
-      <div class="imageholder"><img src="https://placehold.co/810x575" alt="This is a picture" /></div>
-    <div class="description">
-      <h3>2. Gettysburg National Military Park</h3>  
-      <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.</p></div>
-</div>
+      <div class="row">
+        <div class="imageholder">
+          <img src="https://placehold.co/810x575" alt="This is a picture" />
+        </div>
+        <div class="description">
+          <h3>1. Hershey Park</h3>
+          <p>
+            A renowned amusement park featuring exciting rides,
+            live entertainment, and an opportunity to learn about
+            chocolate-making at Hershey's Chocolate World.
+          </p>
+          <a href="https://www.hersheypark.com"
+            ><a href="#" class="button">Visit Site</a></a
+          >
+        </div>
+      </div>
 
-<div class="row">
-  <div class="imageholder"><img src="https://placehold.co/810x575" alt="This is a picture" /></div>
-<div class="description">
-  <h3>1. Hershey Park</h3>  
-  <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p></div>
-
-</div>
-    
-</main>
+      <div class="row">
+        <div class="imageholder">
+          <img src="https://placehold.co/810x575" alt="This is a picture" />
+        </div>
+        <div class="description">
+          <h3>1. Hershey Park</h3>
+          <p>
+            A renowned amusement park featuring exciting rides,
+            live entertainment, and an opportunity to learn about
+            chocolate-making at Hershey's Chocolate World.</p>
+            <a href="https://www.hersheypark.com"
+              ><a href="#" class="button">Visit Site</a></a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="imageholder">
+            <img src="https://placehold.co/810x575" alt="This is a picture" />
+          </div>
+          <div class="description">
+            <h3>1. Hershey Park</h3>
+            <p>
+              A renowned amusement park featuring exciting rides,
+              live entertainment, and an opportunity to learn about
+              chocolate-making at Hershey's Chocolate World.</p>
+              <a href="https://www.hersheypark.com"
+                ><a href="#" class="button">Visit Site</a></a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="imageholder">
+              <img src="https://placehold.co/810x575" alt="This is a picture" />
+            </div>
+            <div class="description">
+              <h3>1. Hershey Park</h3>
+              <p>
+                A renowned amusement park featuring exciting rides,
+                live entertainment, and an opportunity to learn about
+                chocolate-making at Hershey's Chocolate World.</p>
+                <a href="https://www.hersheypark.com"
+                  ><a href="#" class="button">Visit Site</a></a
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="imageholder">
+                <img src="https://placehold.co/810x575" alt="This is a picture" />
+              </div>
+              <div class="description">
+                <h3>1. Hershey Park</h3>
+                <p>
+                  A renowned amusement park featuring exciting rides,
+                  live entertainment, and an opportunity to learn about
+                  chocolate-making at Hershey's Chocolate World.</p>
+                  <a href="https://www.hersheypark.com"
+                    ><a href="#" class="button">Visit Site</a></a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="imageholder">
+                  <img src="https://placehold.co/810x575" alt="This is a picture" />
+                </div>
+                <div class="description">
+                  <h3>1. Hershey Park</h3>
+                  <p>
+                    A renowned amusement park featuring exciting rides,
+                    live entertainment, and an opportunity to learn about
+                    chocolate-making at Hershey's Chocolate World.</p>
+                    <a href="https://www.hersheypark.com"
+                      ><a href="#" class="button">Visit Site</a></a
+                    >
+                  </div>
+                </div><div class="row">
+                  <div class="imageholder">
+                    <img src="https://placehold.co/810x575" alt="This is a picture" />
+                  </div>
+                  <div class="description">
+                    <h3>1. Hershey Park</h3>
+                    <p>
+                      A renowned amusement park featuring exciting rides,
+                      live entertainment, and an opportunity to learn about
+                      chocolate-making at Hershey's Chocolate World.</p>
+                      <a href="https://www.hersheypark.com"
+                        ><a href="#" class="button">Visit Site</a></a
+                      >
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="imageholder">
+                      <img src="https://placehold.co/810x575" alt="This is a picture" />
+                    </div>
+                    <div class="description">
+                      <h3>1. Hershey Park</h3>
+                      <p>
+                        A renowned amusement park featuring exciting rides,
+                        live entertainment, and an opportunity to learn about
+                        chocolate-making at Hershey's Chocolate World.</p>
+                        <a href="https://www.hersheypark.com"
+                          ><a href="#" class="button">Visit Site</a></a
+                        >
+                      </div>
+                    </div>
+                   
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
