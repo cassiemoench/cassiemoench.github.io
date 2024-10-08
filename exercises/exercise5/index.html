@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bob box</title>
+    <style>
+      /* This is a comment */
+      #box {
+        background-color: orange;
+        width: 260px;
+        height: 260px;
+        text-align: center;
+      }
+      #primary-nav {
+        background-color: peachpuff;
+      }
+      #primary-nav li {
+        display: inline-block;
+        padding: 10px;
+      }
+      #primary-nav a {
+        display: block;
+        padding: 10px;
+      }
+      #toggle-nav {
+        display:none;
+      }
+      @media (max-width: 767px) {
+        #primary-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+          display: block;
+        }
+        body.nav-open #primary-nav {
+          grid-template-rows: 1fr;
+        }
+        
+        #toggle-nav {
+          background-color: transparent;
+          border: none;
+          font-size: 36px;
+          position: absolute;
+          top: 0em;
+          right: 0em;
+            display: block;
+          }
+        }
+        .inner {
+          overflow: hidden;
+          
+        }
+      
+    </style>
+  </head>
+  <body>
+    <button id="toggle-nav">&#9776;</button>
+    <nav id="primary-nav" role="navigation">
+      <div class="inner">
+      <ul>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">Gnomepage</a></li>
+        <li><a href="#">Chromepage</a></li>
+        <li><a href="#">Domepage</a></li>
+      </ul>
+      </div>
+    </nav>
+    <img
+      id="bob"
+      src="https://pbs.twimg.com/profile_images/819991503032287232/234yraY8_200x200.jpg"
+    />
+    <p>bob: do NOT touch that square.</p>
+    <div id="box"><p>bad tomato square</p></div>
+    <script>
+     // Perform this after the window has loaded
+    window.onload = function() {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      let toggleNav = document.getElementById('toggle-nav');
+
+      // Tell button to do something on click
+      toggleNav.addEventListener('click', function(){
+
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+
+      });
+    };
+    </script>
+    <input type="checkbox" />
+  </body>
+</html>
