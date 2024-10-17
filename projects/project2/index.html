@@ -1,119 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-        .row {
+      :root {
+        --padding: 20px;
+        --danger: red;
+        --warning: yellow;
+        --bg-color: blue;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .row {
         display: flex;
         height: auto;
         column-gap: 20px;
       }
       .description {
         padding: 0 30px;
-        font-size: 28px;
-        font-family: "Barlow";
-        width: calc(60% - 60px);
-        padding: 0 30px;
-        position: relative;
+        font-size: 26px;
+        font-family: "Barlow", sans-serif;
+        top: -1em;
       }
       .imageholder {
         width: 40%;
       }
-     
-        main {
-        max-width: 1440px;
-        padding: 20px;
-        margin: 0 auto;
-        background-color: #EDE2FF;
-    
+      .description {
+        width: calc(60% - 60px);
+        padding: 0 30px;
+        position: relative;
       }
-        .imageholder {
-            width: 60%;
-            padding: 2em;
-        }
-    
-        .primary-nav {
-            display:inline-block;
-        }
-        #primary-nav {
-        background-color:#4B3C68;
+      main {
+        max-width: 1440px;
+        padding: var(--padding);
+        margin: 0 auto;
+        background-color: #ede2ff;
+      }
+      .imageholder {
+        width: 60%;
+      }
+
+      .primary-nav {
+        display: inline-block;
+      }
+      #primary-nav {
+        background-color: #4b3c68;
         text-align: center;
-    
       }
       #primary-nav li {
         display: inline-block;
         padding: 10px;
-       
       }
       #primary-nav a {
         display: block;
         padding: 10px;
-        color: #EF98FF;
+        color: #ef98ff;
+        text-decoration: none;
+        font-family: "Barlow", sans-serif;
+        
       }
       header {
-        background-color: #4B3C68;
-        color: #EF98FF;
+        background-color: #4b3c68;
+        color: #ef98ff;
         font-size: 40px;
         max-width: 1440px;
-        padding: 20px;
+        padding: var(--padding);
         margin: 0 auto;
         font-family: "Exo", sans-serif;
         font-weight: 600;
       }
-      h1,h2,h3 {
-        font-family: "Barlow", sans-serif;
-        font-size: 40px;
-        font-weight: 700;
+      header.row div:first-child {
+        width: 180px;
+      }
+      header.row div:last-child {
+        width: calc(100% - 180px);
       }
       .text-right {
-        text-align:right;
-
+        text-align: right;
       }
+
+      h1, h2, h3 {
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+      }
+      body {
+        background-color: #ede2ff;
+      }
+      
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animating a Character in After Effects</title>
-    
-</head>
-<body>
-    <header>Tutorials  Animating a Character in After Effects 
+  </head>
+  <body>
+    <header class="row">
+      <div>Tutorials </div>
+      <div class="text-right">Animating a Character in After Effects</div>
     </header>
+
     <main>
-        
-    <h1>Step 1. Make a new composition.</h1>
-    <div class="row">
+      <h1>Step 1. Make a new composition.</h1>
+      <div class="row">
         <div class="imageholder">
-            <img src="https://placehold.co/880x490">
-        
-    </div>
-    <div class="description">
-        <p>You’re going to need a composition before you can do anything. So, once you open After Effects, click New Project, and then New Composition.</div>
-        </p>
-        </body>
-<footer>
-</div>
-<nav id="primary-nav" role="navigation">
-    <div class="inner">
-    <ul>
-        <li><a href="#">back button</a></li>
-      <li><a href="#">Step 1</a></li>
-      <li><a href="step2.html">Step 2</a></li>
-      <li><a href="#">Step 3</a></li>
-      <li><a href="#">Step 4</a></li>
-      <li><a href="#">Step 5</a></li>
-      <li><a href="#">Step 6</a></li>
-      <li><a href="#">Step 7</a></li>
-      <li><a href="#">Step 8</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">next button</a></li>
-    </ul>
-    </div>
-    </nav>
-</footer>
-</main>
+          <img src="https://placehold.co/880x490" />
+        </div>
+
+        <div class="description">
+          <p>
+            You're going to need a composition before you can do anything. So,
+            once you open After Effects, click New Project, and then New
+            Composition.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav id="primary-nav" role="navigation">
+        <div class="inner">
+          <ul>
+            <li>
+              <a href="#"><img src="icons/chevronleft.svg" alt="chevron" /></a>
+            </li>
+            
+            <li>
+                <a href="s1"><img src="icons/closedcircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s2"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s3"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s4"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s5"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s6"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s7"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+              <li>
+                <a href="s8"><img src="icons/opencircle.svg" alt="chevron" /></a>
+              </li>
+                <li>
+                    <a href="hp"><img src="icons/chevronright.svg" alt="chevron" /></a>
+                  </li>
+                  
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>
