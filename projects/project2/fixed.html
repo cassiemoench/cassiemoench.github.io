@@ -96,7 +96,7 @@
         }
         .description {
           padding: 0 30px;
-          font-size: 16px;
+          font-size: 18px;
           font-family: "Barlow", sans-serif;
           top: 0em;
         }
@@ -127,6 +127,8 @@
           color: #ef98ff;
           text-decoration: none;
           font-family: "Barlow", sans-serif;
+          font-size: larger;
+          font-weight: 500;
         }
         header {
           background-color: #4b3c68;
@@ -234,60 +236,28 @@
               <a href="step1.html">Step 1</a>
             </li>
             <li>
-              <a href="step2.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 2"
-              /></a>
+              <a href="step2.html">Step 2</a>
             </li>
             <li>
-              <a href="step3.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 3"
-              /></a>
+              <a href="step3.html">Step 3</a>
             </li>
             <li>
-              <a href="step 4.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 4"
-              /></a>
+              <a href="step 4.html">Step 4</a>
             </li>
             <li>
-              <a href="step5.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 5"
-              /></a>
+              <a href="step5.html">Step 5</a>
             </li>
             <li>
-              <a href="step6.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 6"
-              /></a>
+              <a href="step5a.html">Step 5.5</a>
             </li>
             <li>
-              <a href="step7.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 7"
-              /></a>
+              <a href="step6.html">Step 6</a>
             </li>
             <li>
-              <a href="step8.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
-                  alt="circle step 8"
-              /></a>
+              <a href="step7.html">Step 7</a>
             </li>
             <li>
-              <a href="step2.html"
-                ><img
-                  src="https://cassiemoench.github.io/projects/project2/icons/chevronright.svg"
-                  alt="chevron"
-              /></a>
+              <a href="step8.html">Step 8</a>
             </li>
           </ul>
         </div>
@@ -373,7 +343,7 @@
       window.onload = () => {
         // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
         const toggleNav = document.getElementById("toggle-nav");
-        toggleNav.innerHTML = "&#9776;";
+        toggleNav.innerHTML = "Steps";
 
         // Tell button to do something on click
         toggleNav.addEventListener("click", () => {
@@ -381,7 +351,7 @@
           document.body.classList.toggle("nav-open");
           toggleNav.innerHTML = document.body.classList.contains("nav-open")
             ? "&#x2715"
-            : "&#9776;";
+            : "Steps";
         });
       };
     </script>
