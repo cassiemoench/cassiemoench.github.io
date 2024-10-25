@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <style>
       :root {
@@ -12,7 +17,13 @@
         --warning: yellow;
         --bg-color: blue;
       }
-
+      #toggle-nav {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+      }
       img {
         max-width: 100%;
         height: auto;
@@ -30,7 +41,6 @@
       }
       .imageholder {
         width: 40%;
-   
       }
       .description {
         width: calc(60% - 60px);
@@ -46,25 +56,20 @@
       .imageholder {
         width: 60%;
       }
-
-      .primary-nav {
-        display: inline-block;
-      }
-      #primary-nav {
+      .menu-nav {
         background-color: #4b3c68;
         text-align: center;
       }
-      #primary-nav li {
+      .menu-nav li {
         display: inline-block;
         padding: 10px;
       }
-      #primary-nav a {
+      .menu-nav a {
         display: block;
         padding: 10px;
         color: #ef98ff;
         text-decoration: none;
         font-family: "Barlow", sans-serif;
-        
       }
       header {
         background-color: #4b3c68;
@@ -75,94 +80,102 @@
         margin: 0 auto;
         font-family: "Exo", sans-serif;
         font-weight: 600;
-        
+      }
+      #mobile-nav {
+        display: none;
       }
       @media only screen and (max-width: 600px) {
         img {
-        max-width: 100%;
-        height: auto;
-      }
-      .row {
-        display: flex;
-        height: auto;
-        column-gap: 20px;
-      }
-      .description {
-        padding: 0 30px;
-        font-size: 16px;
-        font-family: "Barlow", sans-serif;
-        top: 0em;
-      }
-      div.imageholder {
-        width: 80%;
-      }
-      .description {
-        width: calc(60% - 60px);
-        padding: 0 30px;
-        position: relative;
-        
-      }
-      main {
-        max-width: 1440px;
-        padding: var(--padding);
-        margin: 0 auto;
-        background-color: #ede2ff;
-      }
-      .imageholder {
-        width: 60%;
+          max-width: 100%;
+          height: auto;
+        }
+        .row {
+          display: flex;
+          height: auto;
+          column-gap: 20px;
+        }
+        .description {
+          padding: 0 30px;
+          font-size: 18px;
+          font-family: "Barlow", sans-serif;
+          top: 0em;
+        }
+        div.imageholder {
+          width: 80%;
+        }
+        .description {
+          width: calc(60% - 60px);
+          padding: 0 30px;
+          position: relative;
+        }
+        main {
+          max-width: 1440px;
+          padding: var(--padding);
+          margin: 0 auto;
+          background-color: #ede2ff;
+        }
+        .imageholder {
+          width: 60%;
+        }
+        #mobile-nav li {
+          display: inline-block;
+          padding: 3px;
+        }
+        #mobile-nav a {
+          display: block;
+          padding: 3px;
+          color: #ef98ff;
+          text-decoration: none;
+          font-family: "Barlow", sans-serif;
+          font-size: larger;
+          font-weight: 500;
+        }
+        header {
+          background-color: #4b3c68;
+          color: #ef98ff;
+          font-size: 18px;
+          max-width: 1440px;
+          padding: var(--padding);
+          margin: 0 auto;
+          font-family: "Exo", sans-serif;
+          font-weight: 600;
+        }
+        h1,
+        h2,
+        h3 {
+          font-family: "Barlow", sans-serif;
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        .row {
+          flex-direction: column;
+        }
       }
 
-      .primary-nav {
-        display: inline-block;
+      @media (max-width: 767px) {
+        #mobile-nav {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.5s ease-out;
+        }
+        #desktop-nav {
+          display: none;
+        }
+        #mobile-nav li {
+          display: block;
+        }
+        body.nav-open #mobile-nav {
+          grid-template-rows: 1fr;
+        }
+        .inner {
+          overflow: hidden;
+        }
+        #toggle-nav {
+          display: block; /* display button beneath breakpoint */
+        }
       }
-      #primary-nav {
-        background-color: #4b3c68;
-        text-align: center;
-      }
-      #primary-nav li {
-        display: inline-block;
-        padding: 3px;
-      }
-      #primary-nav a {
-        display: block;
-        padding: 3px;
-        color: #ef98ff;
-        text-decoration: none;
-        font-family: "Barlow", sans-serif;
-        
-      }
-      header {
-        background-color: #4b3c68;
-        color: #ef98ff;
-        font-size: 18px;
-        max-width: 1440px;
-        padding: var(--padding);
-        margin: 0 auto;
-        font-family: "Exo", sans-serif;
-        font-weight: 600;
-      }
-        h1, h2, h3 {
-        font-family: "Barlow", sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-      }
-      #primary-nav{
 
-display: none;
-
-}
-
-
-
-
-.row{
-flex-direction: column;
-
-}
-      }
-        
-      
-      
       header.row div:first-child {
         width: 180px;
       }
@@ -173,7 +186,9 @@ flex-direction: column;
         text-align: right;
       }
 
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         font-family: "Barlow", sans-serif;
         font-weight: 700;
         font-size: 36px;
@@ -181,20 +196,20 @@ flex-direction: column;
       body {
         background-color: #ede2ff;
       }
-      
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step 4</title>
   </head>
   <body>
+    <button id="toggle-nav"></button>
     <header class="row">
-      <div>Tutorials </div>
+      <div>Tutorials</div>
       <div class="text-right">Animating a Character in After Effects</div>
     </header>
 
     <main>
-      <h1>Step 4. Set up a track matte.</h1>
+      <h1>Step 4. Set up a track matte. </h1>
       <div class="row">
         <div class="imageholder">
           <img src="images/step 4.jpg" alt="a screenshot of After Effects" />
@@ -204,50 +219,140 @@ flex-direction: column;
           <p>
             A track matte is basically a clipping mask, and we need one so that the eyelids stick to the eye. Click on your eyelids layer and click “track matte” and select your eye white image layer. 
           </p>
-          <p><b>Tip:</b> If this makes the head disappear, just click the little eyeball icon to make the layer visible again and you’re good to go.</p>
+          <p><b>Tip:</b> If this makes the head disappear, just click the little eyeball icon to make the layer visible again and you’re good to go. </p>
         </div>
       </div>
     </main>
     <footer>
-      <nav id="primary-nav" role="navigation">
+      <nav id="mobile-nav" class="menu-nav">
         <div class="inner">
           <ul>
             <li>
-                <a href="step3.html"><img src="icons/chevronleft.svg" alt="chevron" /></a>
-              </li>
-              
-              <li>
-                  <a href="step1.html"><img src="icons/opencircle.svg" alt="circle step 1" /></a>
-                </li>
-                <li>
-                  <a href="step2.html"><img src="icons/opencircle.svg" alt="circle step 2" /></a>
-                </li>
-                <li>
-                  <a href="step3.html"><img src="icons/opencircle.svg" alt="circle step 3" /></a>
-                </li>
-                <li>
-                  <a href="step 4.html"><img src="icons/closedcircle.svg" alt="circle step 4" /></a>
-                </li>
-                <li>
-                  <a href="step5.html"><img src="icons/opencircle.svg" alt="circle step 5" /></a>
-                </li>
-                <li>
-                  <a href="step6.html"><img src="icons/opencircle.svg" alt="circle step 6" /></a>
-                </li>
-                <li>
-                  <a href="step7.html"><img src="icons/opencircle.svg" alt="circle step 7" /></a>
-                </li>
-                <li>
-                  <a href="step8.html"><img src="icons/opencircle.svg" alt="circle step 8" /></a>
-                </li>
-                  <li>
-                      <a href="step5.html"><img src="icons/chevronright.svg" alt="chevron" /></a>
-                    </li>
-                    
-                  
+              <a href="homepage.html">Homepage</a>
+            </li>
+
+            <li>
+              <a href="step1.html">Step 1</a>
+            </li>
+            <li>
+              <a href="step2.html">Step 2</a>
+            </li>
+            <li>
+              <a href="step3.html">Step 3</a>
+            </li>
+            <li>
+              <a href="step 4.html">Step 4</a>
+            </li>
+            <li>
+              <a href="step5.html">Step 5</a>
+            </li>
+            <li>
+              <a href="step5a.html">Step 5.5</a>
+            </li>
+            <li>
+              <a href="step6.html">Step 6</a>
+            </li>
+            <li>
+              <a href="step7.html">Step 7</a>
+            </li>
+            <li>
+              <a href="step8.html">Step 8</a>
+            </li>
           </ul>
         </div>
       </nav>
+      <nav id="desktop-nav" class="menu-nav">
+        <ul>
+          <li>
+            <a href="homepage.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/chevronleft.svg"
+                alt="chevron"
+            /></a>
+          </li>
+
+          <li>
+            <a href="step1.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/closedcircle.svg"
+                alt="circle step 1"
+            /></a>
+          </li>
+          <li>
+            <a href="step2.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 2"
+            /></a>
+          </li>
+          <li>
+            <a href="step3.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 3"
+            /></a>
+          </li>
+          <li>
+            <a href="step 4.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 4"
+            /></a>
+          </li>
+          <li>
+            <a href="step5.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 5"
+            /></a>
+          </li>
+          <li>
+            <a href="step6.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 6"
+            /></a>
+          </li>
+          <li>
+            <a href="step7.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 7"
+            /></a>
+          </li>
+          <li>
+            <a href="step8.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/opencircle.svg"
+                alt="circle step 8"
+            /></a>
+          </li>
+          <li>
+            <a href="step2.html"
+              ><img
+                src="https://cassiemoench.github.io/projects/project2/icons/chevronright.svg"
+                alt="chevron"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
+    <script>
+      // Perform this after the window has loaded
+      window.onload = () => {
+        // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+        const toggleNav = document.getElementById("toggle-nav");
+        toggleNav.innerHTML = "Steps";
+
+        // Tell button to do something on click
+        toggleNav.addEventListener("click", () => {
+          // toggle the body's class attribute
+          document.body.classList.toggle("nav-open");
+          toggleNav.innerHTML = document.body.classList.contains("nav-open")
+            ? "&#x2715"
+            : "Steps";
+        });
+      };
+    </script>
   </body>
 </html>
