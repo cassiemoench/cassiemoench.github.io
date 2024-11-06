@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-image: url(images/wormy\ pattern2.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1em 2em;
+        }
+
+        /* Logo and title styling */
+        .logo h1 {
+            color: white;
+            font-size: 1.5em;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .logo h1 span {
+            display: block; /* Ensures each word is on its own line */
+        }
+
+        /* Navbar links */
+        .nav-links a {
+            color: #FFD700;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #7D8BA8;
+            padding: 1em 2em; 
+        }
+
+  
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px; 
+            margin-right: 0.5em; 
+        }
+
+        .logo h1 {
+            color: #251F44;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 1em;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #251F44;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #fff;
+        }
+
+  a {
+    text-decoration: underline;
+    color:#251F44;
+    font-weight: 600;
+  }
+  a:hover {
+    color: #fff
+  }
+        .container {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+
+        .banner {
+            background-color: #7D8BA8;
+            padding: 2em;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2em;
+            color: #251F44;
+            margin-bottom: 0.5em;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            color: #251F44;
+        }
+
+
+        .content {
+            max-width: 800px;
+            margin: 2em auto;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <div class="logo">
+            <img src="images/bookwormz icon.png" alt="Bookwormz Logo">
+            <h1><span>book</span><span>wormz</span></h1>
+        </div>
+    
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#bookz">Bookz</a>
+            <a href="#bio">Bio</a>
+            <a href="#reviewz">Reviewz</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        
+        <div class="banner">
+            <h1>Welcome to Bookwormz – your literary escape! 
+            </h1>
+            <p>
+                Each month, we feature a Book of the Month with insights into its themes and characters, perfect for readers seeking their next page-turner. Discover new stories and connect with fellow book lovers at Bookwormz!
+                <a href="bookz.html">Click here to view our Book of the Month!</a></p>
+        </div>
+
+   
+
+</body>
+</html>
