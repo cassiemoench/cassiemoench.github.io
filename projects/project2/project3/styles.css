@@ -1,0 +1,143 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+       
+        background-size: cover;
+        font-family: 'Karla', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #7D8BA8;
+        padding: 1em 2em;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+        margin-right: 0.5em;
+    }
+
+    .logo h1 {
+        color: #251F44;
+        font-size: 1.5em;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        font-family: 'Boogaloo', sans-serif
+    }
+
+    .logo h1 span {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1em;
+        text-decoration: none;
+        font-family: 'Boogaloo', sans-serif
+    }
+
+    .nav-links a {
+        color: #251F44;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        transition: background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #fff;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #251F44;
+        font-weight: 600;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .book-info {
+        flex: 1;
+        text-align: left;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .book-info .subtitle {
+        font-size: 1.2em;
+        color: #251F44;
+        margin-bottom: 0.2em;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .book-info .title {
+        font-size: 3em;
+        font-weight: bold;
+        color: #251F44;
+        margin-bottom: 1em;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .book-info .description {
+        font-size: 1.1em;
+        color: #666;
+        line-height: 1.6;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .book-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .book-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+
+    .banner {
+        background-color: #7D8BA8;
+        padding: 2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+        color: #251F44;
+        margin-bottom: 0.5em;
+        font-weight: 800;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+        color: #251F44;
+    }
