@@ -144,6 +144,48 @@
             max-width: 800px;
             margin: 2em auto;
         }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .book-image {
+                order: -1;
+                margin-bottom: 1em;
+            }
+
+            .book-info {
+                text-align: center; 
+            }
+
+            .book-info .subtitle {
+                text-align: center; 
+            }
+
+            .book-info .title {
+                font-size: 3em; 
+                text-align: center;
+            }
+
+            .book-info .description {
+                font-size: 1em;
+                padding: 1em;
+                text-align: justify;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+            }
+
+            .buttons a {
+                font-size: 1.5em; 
+                padding: 0.5em 1em;
+                width: 100%;
+                text-align: center; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -159,7 +201,7 @@
             <a href="homepage.html">HOME</a>
             <a href="bookz.html">BOOKZ</a>
             <a href="author.html">AUTHOR</a>
-            <a href="#reviewz">REVIEWZ</a>
+            <a href="reviewz.html">REVIEWZ</a>
         </div>
     </nav>
 
@@ -178,3 +220,4 @@
 
 </body>
 </html>
+        
