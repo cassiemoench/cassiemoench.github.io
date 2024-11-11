@@ -18,7 +18,7 @@
         }
 
         body {
-            background-image: url(images/wormy\ pattern2.jpg);
+            background-image: url(images/wonderland.jpg);
             background-size: cover;
             font-family: 'Karla', sans-serif;
             display: flex;
@@ -30,7 +30,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #7D8BA8;
+            background-color: #7d8ba8ad;
             padding: 1em 2em;
         }
 
@@ -103,7 +103,7 @@
 
         .book-info .subtitle {
             font-size: 1.2em;
-            color: #251F44;
+            color: #ffffff;
             margin-bottom: 0.2em;
             font-family: 'Karla', sans-serif;
         }
@@ -111,17 +111,17 @@
         .book-info .title {
             font-size: 5em;
             font-weight: 400;
-            color: #251F44;
+            color: #ffffff;
             margin-bottom: 0;
             font-family: 'Bigelow Rules', serif;
         }
 
         .book-info .description {
             font-size: 1.1em;
-            color: #251F44;
+            color: #ffffff;
             line-height: 1.6;
             font-family: 'Karla', sans-serif;
-            background-color: #7d8ba888; 
+            background-color: #24184e99; 
     padding: 1em;
     border-radius: 8px; 
         }
@@ -156,19 +156,18 @@
             font-size: 1.2em;
             color: #251F44;
         }
-        /* Flexbox container for the buttons */
+      
 .book-info .buttons {
     display: flex;
-    justify-content: space-between; /* Space between buttons */
-    align-items: center; /* Vertically center the buttons */
-    margin-top: 1.5em; /* Space between the description and buttons */
-}
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 1.5em; }
 
-/* Styling for individual buttons */
+
 .book-info .buttons a {
     font-size: 2em;
     font-weight: 600;
-    color: #251F44;
+    color: #ffffff;
     padding: 0.8em 2em;
     text-decoration: underline;
     border-radius: 5px;
@@ -176,10 +175,10 @@
     font-family: 'Boogaloo', sans-serif;
 }
 
-/* Hover effect for buttons */
+
 .book-info .buttons a:hover {
-background-color: #7d8ba888; 
-    color: #251F44; 
+background-color: #24184e99; 
+
 }
 
 
@@ -190,7 +189,49 @@ background-color: #7d8ba888;
 .book-info .about-author {
     text-align: right;
 }
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
 
+            .book-image {
+                order: -1; /* Move image above description */
+                margin-bottom: 1em;
+            }
+
+            .book-info {
+                text-align: center; /* Center-align text in mobile */
+            }
+
+            .book-info .subtitle {
+                text-align: center; /* Center-align subtitle */
+            }
+
+            .book-info .title {
+                font-size: 3em; /* Adjust font size for mobile */
+                text-align: center;
+            }
+
+            .book-info .description {
+                font-size: 1em;
+                padding: 1em;
+                text-align: justify;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+            }
+
+            .buttons a {
+                font-size: 1.5em; /* Reduce button font size */
+                padding: 0.5em 1em;
+                width: 100%; /* Full-width buttons on mobile */
+                text-align: center; /* Center-align text within buttons */
+            }
+        }
+       
     </style>
 </head>
 <body>
