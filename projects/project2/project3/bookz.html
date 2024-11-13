@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-    <!-- Favicon and Fonts -->
+  
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (3)/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (3)/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (3)/favicon-16x16.png">
@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alice in Wonderland</title>
     <style>
-        /* Basic Reset and Styling */
+    
         * {
             margin: 0;
             padding: 0;
@@ -74,14 +74,14 @@
             color: #fff;
         }
 
-        /* Hamburger Menu Styling */
+     
         .hamburger {
             display: none;
             font-size: 1.5em;
             cursor: pointer;
         }
 
-        /* Full-Screen Overlay Below Navbar */
+   
         @media (max-width: 768px) {
             .hamburger {
                 display: block;
@@ -91,10 +91,10 @@
             .nav-links {
                 display: none;
                 position: fixed;
-                top: 60px; /* Adjust to match the height of the navbar */
+                top: 60px; 
                 left: 0;
                 width: 100%;
-                height: calc(100% - 60px); /* Ensures it doesn’t overlap the navbar */
+                height: calc(100% - 60px); 
                 background-color: rgba(37, 31, 68, 0.95);
                 flex-direction: column;
                 align-items: center;
@@ -111,11 +111,11 @@
             }
 
             .nav-links.active {
-                display: flex; /* Show overlay menu */
+                display: flex; 
             }
         }
 
-        /* Remaining Styling for Content */
+     
         .container {
             display: flex;
             align-items: center;
@@ -154,7 +154,7 @@
             border-radius: 8px;
         }
 
-        /* Smaller book image */
+      
         .book-image {
             flex: 0.9;
             display: flex;
@@ -191,7 +191,7 @@
             background-color: #24184e99;
         }
 
-        /* Adjustments for Smaller Screens */
+     
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
