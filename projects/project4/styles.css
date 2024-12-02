@@ -4,7 +4,7 @@ main {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -26,7 +26,7 @@ nav ul {
     padding: 0;
     margin: 10px 0 0 0;
     display: flex;
-    gap: 50px;
+    gap: 530px;
     color:#D8CDC9;
 }
 nav ul li {
@@ -39,10 +39,13 @@ nav ul li a {
     font-weight: bold;
     color:#D8CDC9;
 }
+nav ul li a.active {
+    color: #D7843C;
+}
 header {
 
-
-    padding: 50px 20px;
+font-family: 'Literata', serif;
+    padding: 20px 20px;
     color:#D8CDC9;
 }
 .banner {
@@ -62,6 +65,7 @@ header {
 .cta {
     margin: 20px 0;
     color:#D8CDC9;
+    font-family: 'Merriweather', sans-serif;
 }
 .cta button {
     padding: 10px 20px;
@@ -87,10 +91,21 @@ footer .social-icons img {
     height: 30px;
     cursor: pointer;
 }
-p, h2 {
+p {
     max-width: 75ch;
     margin: 0 auto;
     color: #D8CDC9;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 200;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    max-width: 75ch;
+    margin: 0 auto;
+    color: #D8CDC9;
+
 }
 .background-section {
     background: linear-gradient(to bottom, #215974, #213843);
@@ -99,7 +114,7 @@ p, h2 {
 
 header {
     color: #D8CDC9;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 .banner {
