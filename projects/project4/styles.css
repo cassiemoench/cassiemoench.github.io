@@ -43,7 +43,8 @@ nav ul li a.active {
     color: #D7843C;
 }
 header {
-
+margin: 0;
+line-height: 1.2;
 font-family: 'Literata', serif;
     padding: 20px 20px;
     color:#D8CDC9;
@@ -66,6 +67,7 @@ font-family: 'Literata', serif;
     margin: 20px 0;
     color:#D8CDC9;
     font-family: 'Merriweather', sans-serif;
+    font-weight: 100;
 }
 .cta button {
     padding: 10px 20px;
@@ -75,6 +77,8 @@ font-family: 'Literata', serif;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Literata', serif;
+    font-weight: 900;
 }
 footer {
     background-color: #3e2723;
@@ -100,6 +104,9 @@ p {
 }
 h1 {
     font-size: 60px;
+    margin: 0;
+    line-height: 2;
+    padding-bottom: 20px;
 }
 h2 {
     max-width: 75ch;
