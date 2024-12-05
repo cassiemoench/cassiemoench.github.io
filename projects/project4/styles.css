@@ -1,6 +1,4 @@
-main {
-    background-color: #215974;
-}
+
 
 
 body {
@@ -42,6 +40,9 @@ nav ul li a {
 nav ul li a.active {
     color: #D7843C;
 }
+nav ul li a:hover {
+color:  #8D6E63;
+}
 header {
 margin: 0;
 line-height: 1.2;
@@ -68,6 +69,7 @@ font-family: 'Literata', serif;
     color:#D8CDC9;
     font-family: 'Merriweather', sans-serif;
     font-weight: 100;
+    font-size: 12px;
 }
 .cta button {
     padding: 10px 20px;
@@ -75,14 +77,19 @@ font-family: 'Literata', serif;
     color: #3E2723;
     background-color: #D8CDC9;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     font-family: 'Literata', serif;
     font-weight: 900;
 }
+.cta button:hover {
+    background-color: #8D6E63;
+    color: #D8CDC9;
+}
+
 footer {
     background-color: #3e2723;
-    color: white;
+    color: #D8CDC9;
     padding: 10px 0;
 }
 footer .social-icons {
@@ -107,6 +114,10 @@ h1 {
     margin: 0;
     line-height: 2;
     padding-bottom: 20px;
+    font-weight: 200;
+}
+b {
+    font-weight: 700;
 }
 h2 {
     max-width: 75ch;
@@ -130,4 +141,9 @@ header {
     margin: 20px auto;
     padding: 30px;
     width: 80%;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
