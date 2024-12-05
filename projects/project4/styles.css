@@ -26,6 +26,7 @@ nav ul {
     display: flex;
     gap: 530px;
     color:#D8CDC9;
+    transition: ease-in-out 0.5s;
 }
 nav ul li {
     display: inline;
@@ -42,6 +43,7 @@ nav ul li a.active {
 }
 nav ul li a:hover {
 color:  #8D6E63;
+transition: ease-in-out 0.3s;
 }
 header {
 margin: 0;
@@ -85,6 +87,7 @@ font-family: 'Literata', serif;
 .cta button:hover {
     background-color: #8D6E63;
     color: #D8CDC9;
+    transition: ease-in-out 0.3s;
 }
 
 footer {
@@ -146,4 +149,15 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html, body {
+    background-image: url(images/coffeebeans.jpg);
+    background-size: 50%;
 }
