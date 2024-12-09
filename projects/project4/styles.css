@@ -99,11 +99,13 @@ footer .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
+    color: #D8CDC9;
 }
 footer .social-icons img {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    color: #D8CDC9;
 }
 p {
     max-width: 75ch;
