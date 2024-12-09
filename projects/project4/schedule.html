@@ -49,7 +49,7 @@ nav ul li a:hover {
 color:  #8D6E63;
 transition: ease-in-out 0.3s;
 }
-        /* General styles */
+      
         .background-section {
             background: linear-gradient(to bottom, #D8CDC9, #FFFFFF) !important;
         }
@@ -67,7 +67,7 @@ transition: ease-in-out 0.3s;
             padding: 0 15px;
         }
 
-        /* Heading styles */
+    
         .main-heading {
             text-align: center;
             font-size: 60px;
@@ -85,7 +85,7 @@ transition: ease-in-out 0.3s;
             line-height: 2;
         }
 
-        /* Image styles */
+      
         .about-image {
             display: block;
             margin: 20px auto;
@@ -94,7 +94,7 @@ transition: ease-in-out 0.3s;
             border-radius: 8px;
         }
 
-        /* Text block styles */
+      
         .text-block {
             text-align: justify;
             margin: 20px 0;
@@ -132,49 +132,49 @@ transition: ease-in-out 0.3s;
     font-family: 'Literata,' serif;
     }
     @media only screen and (max-width: 768px) {
-    /* Navigation styling for mobile */
+    
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    /* Adjust main heading font size */
+ 
     .main-heading {
         font-size: 40px;
     }
 
-    /* Adjust schedule day headers */
+
     .schedule-header {
         font-size: 1.8rem;
         margin: 20px 0;
     }
 
-    /* Subheading adjustments */
+   
     .subheading {
         font-size: 1.1rem;
         margin-bottom: 10px;
     }
 
-    /* Adjust text block for better readability */
+   
     .text-block, .text-block2 {
         font-size: 1rem;
         margin: 8px 0;
         padding: 0 15px;
     }
 
-    /* Adjust event times for mobile */
+
     .text-block2 {
         font-size: 0.9rem;
     }
 
-    /* Image adjustments if any for schedule */
+  
     .about-image {
-        max-width: 80%; /* Adjust image size */
+        max-width: 80%; 
         height: auto;
     }
 
-    /* Adjust footer icons */
+
     footer .social-icons {
         display: flex;
         justify-content: space-around;
@@ -186,7 +186,7 @@ transition: ease-in-out 0.3s;
         width: 30px;
     }
     .dropdown {
-        display: none; /* Keep the dropdown hidden by default */
+        display: none; 
     }
 }
     </style>
@@ -196,7 +196,7 @@ transition: ease-in-out 0.3s;
         <a href="homepage.html">
             <img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo">
         </a>
-        <button id="menu-toggle">&#x25BC;</button> <!-- Chevron for dropdown -->
+        <button id="menu-toggle">&#x25BC;</button> 
         <div class="dropdown" id="dropdown-menu">
             <ul>
                 <li><a href="about.html">About</a></li>
@@ -204,7 +204,7 @@ transition: ease-in-out 0.3s;
                 <li><a href="schedule.html">Schedule</a></li>
             </ul>
         </div>
-        <!-- For larger screens: normal navigation menu -->
+        
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -215,7 +215,7 @@ transition: ease-in-out 0.3s;
 <body>
     <div class="background-section">
     <div class="container">
-        <!-- Main heading -->
+      
         <header>
             <div>
             <h1 class="main-heading">We're brewing something special <b><i>all week long.</i></b></h1>
@@ -342,7 +342,7 @@ transition: ease-in-out 0.3s;
 </div>
     </footer>
     <script>
-        // JavaScript to toggle dropdown
+      
         document.getElementById('menu-toggle').addEventListener('click', function () {
             const dropdownMenu = document.getElementById('dropdown-menu');
             dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';

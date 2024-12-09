@@ -159,73 +159,73 @@ transition: ease-in-out 0.3s;
     color:#d7ccc8;
 }
 @media only screen and (max-width: 768px) {
-    /* Adjust the navigation */
+   
     nav ul {
-        display: none; /* Hide the normal navigation */
-        flex-direction: column; /* Stack the menu items vertically */
-        width: 100%; /* Ensure it takes up full width */
-        gap: 10px; /* Reduce the gap between items */
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        gap: 10px; 
     }
 
     nav .dropdown {
-        display: block;
+        display: none;
     }
 
     nav ul li {
-        text-align: center; /* Center the text */
+        text-align: center;
         padding: 10px 0;
-        width: 100%; /* Make each item take full width */
+        width: 100%; 
     }
 
     nav ul li a {
-        font-size: 1.2rem; /* Increase the font size for readability */
+        font-size: 1.2rem; 
     }
 
-    /* Adjust the banner image */
+   
     .banner {
         width: 100%;
         height: auto;
-        object-fit: cover; /* Ensure the image scales properly */
+        object-fit: cover; 
     }
 
-    /* Adjust banner text for mobile */
+   
     .banner-text {
-        font-size: 60px; /* Smaller font size for banner text */
+        font-size: 60px; 
         font-weight: bold;
-        line-height: 1.2; /* Adjust line height for better readability */
+        line-height: 1.2;
     }
 
     .banner-left,
     .banner-right {
-        font-size: 50px; /* Scale down the banner text */
+        font-size: 50px;
     }
 
     .drinks-text,
     .sip-savor-smile {
-        font-size: 90px; /* Adjust text for drinks and slogan */
+        font-size: 35px;
     }
 
     .smile {
-        font-size: 70px; /* Scale down the "smile" text */
+        font-size: 35px; 
     }
 
     .fresh-text,
     .food-text {
-        font-size: 70px; /* Scale down the food/fresh banner text */
+        font-size: 35px;
     }
 
-    /* Adjust the menu section */
+  
     .menu-section {
-        width: 100%; /* Ensure the menu section takes up full width */
+        width: 100%; 
         padding: 15px;
     }
 
-    /* Adjust the menu items */
+   
     .menu-item {
-        flex-direction: column; /* Stack the menu items vertically */
-        text-align: center; /* Center the text */
+        flex-direction: column; 
+        text-align: center;
         padding: 10px;
-        border-bottom: none; /* Remove the border on small screens */
+        border-bottom: none; 
     }
 
     .menu-item span {
@@ -237,7 +237,7 @@ transition: ease-in-out 0.3s;
         font-weight: bold;
     }
 
-    /* Adjust food and drink sections on mobile */
+  
     .banner-wrapper {
         display: block;
     }
@@ -250,19 +250,19 @@ transition: ease-in-out 0.3s;
     }
 
     footer img {
-        width: 30px; /* Make the icons smaller for mobile */
+        width: 30px;
     }
 
-    /* Adjust heading for mobile version */
+   
     header h1 {
-        font-size: 2.5rem; /* Smaller font size for the heading */
+        font-size: 30px;
         text-align: center;
         padding: 20px;
         font-family: 'Literata', serif;
     }
 
     header p {
-        font-size: 1rem; /* Adjust description size */
+        font-size: 1rem;
         text-align: center;
         color: #d7ccc8;
     }
@@ -276,7 +276,7 @@ transition: ease-in-out 0.3s;
             <a href="homepage.html">
                 <img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo">
             </a>
-            <button id="menu-toggle">&#x25BC;</button> <!-- Chevron for dropdown -->
+            <button id="menu-toggle">&#x25BC;</button> 
             <div class="dropdown" id="dropdown-menu">
                 <ul>
                     <li><a href="about.html">About</a></li>
@@ -284,7 +284,7 @@ transition: ease-in-out 0.3s;
                     <li><a href="schedule.html">Schedule</a></li>
                 </ul>
             </div>
-            <!-- For larger screens: normal navigation menu -->
+           
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -497,7 +497,7 @@ transition: ease-in-out 0.3s;
 </div>
     </footer>
     <script>
-        // JavaScript to toggle dropdown
+    
         document.getElementById('menu-toggle').addEventListener('click', function () {
             const dropdownMenu = document.getElementById('dropdown-menu');
             dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
