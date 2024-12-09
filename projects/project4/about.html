@@ -80,12 +80,128 @@
     padding-bottom: 20px;
     font-weight: 200;
     }
+    nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3E2723;
+    color:#D8CDC9;
+    padding: 10px 0;
+}
+nav img {
+    height: 50px;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 530px;
+    color:#D8CDC9;
+    transition: ease-in-out 0.5s;
+}
+nav ul li {
+    display: inline;
+    color:#D8CDC9;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    color:#D8CDC9;
+}
+nav ul li a.active {
+    color: #D7843C;
+}
+nav ul li a:hover {
+color:  #8D6E63;
+transition: ease-in-out 0.3s;
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    /* Navigation adjustments */
+    nav ul {
+        display: none; /* Hide large menu on mobile */
+    }
+
+    #menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    .dropdown {
+        display: none; /* Keep dropdown hidden by default */
+    }
+
+    /* Main Heading */
+    .main-heading {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        padding-bottom: 10px;
+    }
+
+    .subheading {
+        font-size: 1.1rem; /* Adjust subheading font size */
+    }
+
+    /* Adjust the About Image */
+    .about-image {
+        max-width: 80%; /* Make the image larger on mobile, but still fit */
+        margin: 20px auto;
+        height: auto;
+    }
+
+    /* Text Block Adjustments */
+    .text-block {
+        font-size: 14px; /* Adjust font size for readability */
+        line-height: 1.6;
+        margin: 20px;
+    }
+
+    .section-heading {
+        font-size: 1.5rem; /* Smaller section headings */
+        margin-top: 30px;
+    }
+
+    /* Footer and Social Icons */
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    footer .social-icons img {
+        width: 30px; /* Smaller icons on mobile */
+        height: 30px;
+    }
+
+    /* Adjust layout of multiple text sections */
+    .text-block p {
+        margin: 10px 0; /* Reduce space between paragraphs */
+    }
+
+    /* Ensure the page still has decent padding on mobile */
+    .container {
+        padding: 0 10px;
+    }
+}
 
     </style>
 </head>
 <div class="container">
     <nav>
-        <a href="homepage.html"><img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo"></a>
+        <a href="homepage.html">
+            <img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo">
+        </a>
+        <button id="menu-toggle">&#x25BC;</button> <!-- Chevron for dropdown -->
+        <div class="dropdown" id="dropdown-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </div>
+        <!-- For larger screens: normal navigation menu -->
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -142,5 +258,12 @@
 </div>
 </div>
     </footer>
+    <script>
+        // JavaScript to toggle dropdown
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>

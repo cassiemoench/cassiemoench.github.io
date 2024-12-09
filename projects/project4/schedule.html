@@ -11,7 +11,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3E2723;
+    color:#D8CDC9;
+    padding: 10px 0;
+}
+nav img {
+    height: 50px;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 530px;
+    color:#D8CDC9;
+    transition: ease-in-out 0.5s;
+}
+nav ul li {
+    display: inline;
+    color:#D8CDC9;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    color:#D8CDC9;
+}
+nav ul li a.active {
+    color: #D7843C;
+}
+nav ul li a:hover {
+color:  #8D6E63;
+transition: ease-in-out 0.3s;
+}
         /* General styles */
         .background-section {
             background: linear-gradient(to bottom, #D8CDC9, #FFFFFF) !important;
@@ -94,12 +131,80 @@
     font-weight: 200;
     font-family: 'Literata,' serif;
     }
+    @media only screen and (max-width: 768px) {
+    /* Navigation styling for mobile */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
+    /* Adjust main heading font size */
+    .main-heading {
+        font-size: 40px;
+    }
+
+    /* Adjust schedule day headers */
+    .schedule-header {
+        font-size: 1.8rem;
+        margin: 20px 0;
+    }
+
+    /* Subheading adjustments */
+    .subheading {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust text block for better readability */
+    .text-block, .text-block2 {
+        font-size: 1rem;
+        margin: 8px 0;
+        padding: 0 15px;
+    }
+
+    /* Adjust event times for mobile */
+    .text-block2 {
+        font-size: 0.9rem;
+    }
+
+    /* Image adjustments if any for schedule */
+    .about-image {
+        max-width: 80%; /* Adjust image size */
+        height: auto;
+    }
+
+    /* Adjust footer icons */
+    footer .social-icons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+    .dropdown {
+        display: none; /* Keep the dropdown hidden by default */
+    }
+}
     </style>
 </head>
 <div class="container">
     <nav>
-        <a href="homepage.html"><img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo"></a>
+        <a href="homepage.html">
+            <img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo">
+        </a>
+        <button id="menu-toggle">&#x25BC;</button> <!-- Chevron for dropdown -->
+        <div class="dropdown" id="dropdown-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </div>
+        <!-- For larger screens: normal navigation menu -->
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -236,5 +341,12 @@
 </div>
 </div>
     </footer>
+    <script>
+        // JavaScript to toggle dropdown
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>

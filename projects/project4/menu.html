@@ -18,7 +18,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Brews & Bonds</title>
     <style>
-        
+        nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3E2723;
+    color:#D8CDC9;
+    padding: 10px 0;
+}
+nav img {
+    height: 50px;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 530px;
+    color:#D8CDC9;
+    transition: ease-in-out 0.5s;
+}
+nav ul li {
+    display: inline;
+    color:#D8CDC9;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    color:#D8CDC9;
+}
+nav ul li a.active {
+    color: #D7843C;
+}
+nav ul li a:hover {
+color:  #8D6E63;
+transition: ease-in-out 0.3s;
+}
         .banner {
     display: block;
     width: 100%;
@@ -121,18 +158,139 @@
     right: 5%;
     color:#d7ccc8;
 }
+@media only screen and (max-width: 768px) {
+    /* Adjust the navigation */
+    nav ul {
+        display: none; /* Hide the normal navigation */
+        flex-direction: column; /* Stack the menu items vertically */
+        width: 100%; /* Ensure it takes up full width */
+        gap: 10px; /* Reduce the gap between items */
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav ul li {
+        text-align: center; /* Center the text */
+        padding: 10px 0;
+        width: 100%; /* Make each item take full width */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Increase the font size for readability */
+    }
+
+    /* Adjust the banner image */
+    .banner {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure the image scales properly */
+    }
+
+    /* Adjust banner text for mobile */
+    .banner-text {
+        font-size: 60px; /* Smaller font size for banner text */
+        font-weight: bold;
+        line-height: 1.2; /* Adjust line height for better readability */
+    }
+
+    .banner-left,
+    .banner-right {
+        font-size: 50px; /* Scale down the banner text */
+    }
+
+    .drinks-text,
+    .sip-savor-smile {
+        font-size: 90px; /* Adjust text for drinks and slogan */
+    }
+
+    .smile {
+        font-size: 70px; /* Scale down the "smile" text */
+    }
+
+    .fresh-text,
+    .food-text {
+        font-size: 70px; /* Scale down the food/fresh banner text */
+    }
+
+    /* Adjust the menu section */
+    .menu-section {
+        width: 100%; /* Ensure the menu section takes up full width */
+        padding: 15px;
+    }
+
+    /* Adjust the menu items */
+    .menu-item {
+        flex-direction: column; /* Stack the menu items vertically */
+        text-align: center; /* Center the text */
+        padding: 10px;
+        border-bottom: none; /* Remove the border on small screens */
+    }
+
+    .menu-item span {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .menu-item span:last-child {
+        font-weight: bold;
+    }
+
+    /* Adjust food and drink sections on mobile */
+    .banner-wrapper {
+        display: block;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer img {
+        width: 30px; /* Make the icons smaller for mobile */
+    }
+
+    /* Adjust heading for mobile version */
+    header h1 {
+        font-size: 2.5rem; /* Smaller font size for the heading */
+        text-align: center;
+        padding: 20px;
+        font-family: 'Literata', serif;
+    }
+
+    header p {
+        font-size: 1rem; /* Adjust description size */
+        text-align: center;
+        color: #d7ccc8;
+    }
+}
     </style>
 </head>
 <body>
     <div class="container">
 
-    <nav>
-        <a href="homepage.html"><img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo"></a>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html" class="active">Menu</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-        </ul>
+        <nav>
+            <a href="homepage.html">
+                <img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo">
+            </a>
+            <button id="menu-toggle">&#x25BC;</button> <!-- Chevron for dropdown -->
+            <div class="dropdown" id="dropdown-menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                </ul>
+            </div>
+            <!-- For larger screens: normal navigation menu -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
     </nav>
     <div class="background-section">
 
@@ -338,5 +496,12 @@
 </div>
 </div>
     </footer>
+    <script>
+        // JavaScript to toggle dropdown
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>

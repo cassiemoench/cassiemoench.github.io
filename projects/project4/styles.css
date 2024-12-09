@@ -164,3 +164,108 @@ html, body {
     background-image: url(images/coffeebeans.jpg);
     background-size: 50%;
 }
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Only show on small screens */
+}
+    .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Background color for main content */
+main {
+    background-color: #215974;
+}
+
+/* Style for the menu toggle button */
+#menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Background color for main content */
+main {
+    background-color: #215974;
+}
+
+/* Style for the menu toggle button */
+#menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Dropdown Styling (Key Fixes Here) */
+.dropdown {
+    display: none; /* Hidden by default */
+    background-color: #3E2723; /* Match the navbar background */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50px; /* Ensure dropdown is below the toggle button */
+    left: 0; /* Align dropdown to the left edge */
+    width: 100%; /* Make sure the dropdown spans the width of the screen */
+}
+
+/* Dropdown menu list styling */
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block; /* This is crucial to make the items stack vertically */
+}
+
+.dropdown ul li {
+    margin: 10px 0; /* Space between items */
+}
+
+.dropdown ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 16px;
+    display: block; /* This will make each link take up the full width of the container */
+}
+
+/* For large screens: regular horizontal menu */
+nav ul {
+    display: none; /* Hide normal menu on small screens */
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide large menu on small screens */
+    }
+
+    #menu-toggle {
+        display: block; /* Show the menu toggle on small screens */
+    }
+
+    .dropdown {
+        display: none; /* Keep the dropdown hidden by default */
+    }
+}

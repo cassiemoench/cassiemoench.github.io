@@ -13,32 +13,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brews & Bonds</title>
    <style>
-    .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-    overflow: hidden;
+    
+    /* Ensure the container is still using the layout as is */
+    nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3E2723;
+    color:#D8CDC9;
+    padding: 10px 0;
 }
-    main {
-    background-color: #215974;
+nav img {
+    height: 50px;
+    cursor: pointer;
 }
-.background-section {
-    background: linear-gradient(to bottom, #215974, #213843);
-    padding: 20px 0;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 530px;
+    color:#D8CDC9;
+    transition: ease-in-out 0.5s;
 }
+nav ul li {
+    display: inline;
+    color:#D8CDC9;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    color:#D8CDC9;
+}
+nav ul li a.active {
+    color: #D7843C;
+}
+nav ul li a:hover {
+color:  #8D6E63;
+transition: ease-in-out 0.3s;
+}
+@media (max-width: 768px) {
+    /* Adjust navigation menu */
+    nav ul {
+        display: none; /* Hide large menu on mobile */
+    }
+    
+    #menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    .dropdown {
+        display: none; /* Keep the dropdown hidden by default */
+    }
+
+    /* Adjust banner to keep images horizontal but smaller */
+    .banner {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .banner img {
+        width: 30%; /* Adjust image width to make them smaller */
+        height: auto;
+        object-fit: cover;
+        margin: 5px; /* Add space between images */
+    }
+
+    /* Adjust text for header and CTA */
+    header h1 {
+        font-size: 30px; /* Smaller font for mobile */
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 14px;
+        max-width: 90%; /* Ensure text is not too wide */
+        margin: 0 auto;
+    }
+
+    .cta h2 {
+        font-size: 18px;
+    }
+
+    .cta button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer .social-icons {
+        gap: 10px;
+    }
+
+    footer .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+    </style>
+
    </style>
 </head>
 <body>
     <div class="container">
-    <nav>
-        <a href="homepage.html"><img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo"></a>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <a href="homepage.html">
+                <img src="images/brews & bonds combo mark.png" alt="Brews & Bonds Logo">
+            </a>
+            <button id="menu-toggle">&#x25BC;</button> <!-- Chevron for dropdown -->
+            <div class="dropdown" id="dropdown-menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                </ul>
+            </div>
+            <!-- For larger screens: normal navigation menu -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
     
     <div class="background-section">
     <header>
@@ -63,6 +161,12 @@
     </div>
 </div>
         </footer>
-
+        <script>
+            // JavaScript to toggle dropdown
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                const dropdownMenu = document.getElementById('dropdown-menu');
+                dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+            });
+        </script>
 </body>
 </html>
