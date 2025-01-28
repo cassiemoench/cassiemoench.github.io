@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("hello");
+
+        function showImageAndChangeBackground() {
+            const image = document.getElementById('image');
+            const caption = document.getElementById('caption');
+            const body = document.body;
+            const soundEffect = document.getElementById('soundEffect');
+
+            image.style.display = 'block'; 
+            caption.style.display = 'block'; 
+            body.style.backgroundColor = 'red'; 
+            soundEffect.play(); 
+        }
+    </script>
+    <style>
+        body {
+            transition: background-color 1s ease; 
+            background-color: white; 
+        }
+
+        #image, #caption {
+            display: none; 
+        }
+        #image {
+            width: 300px;
+            height: auto;
+        }
+        #caption {
+            font-size: 26px;
+            color: #000000;
+            font-family: 'Comic Sans', sans-serif; 
+            margin-top: 10px;
+        }
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-weight: normal">hiii</h1>
+    <button onclick="showImageAndChangeBackground()">what's this?</button>
+    
+
+    <div id="imageContainer">
+        <img id="image" src="images/catpoint.webp" alt="kitty">
+        <p id="caption">you just got comic sans'd</p>
+    </div>
+    <audio id="soundEffect" src="SpongeBob SquarePants Production Music - Hawaiian Cocktail.mp3"></audio>
+</body>
+</html>
